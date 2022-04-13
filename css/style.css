@@ -70,16 +70,30 @@ body {
 
 .list__item {
   margin-right: 40px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.list__item:hover {
+  border-bottom: 4px solid #5C8692;
 }
 
 .social__img {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .header__button {
   color: #fff;
   background-color: #5C8692;
   padding: 25px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.header__button:hover {
+  border-bottom: 4px solid #5C8692;
+  font-size: 20px;
 }
 
 .header__btn {
@@ -131,7 +145,42 @@ body {
 .content__img {
   margin-top: 120px;
 }
+.content__img img {
+  -webkit-animation-name: img-anim;
+          animation-name: img-anim;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
 
+@-webkit-keyframes img-anim {
+  0% {
+    -webkit-transform: translateX(-3000px);
+            transform: translateX(-3000px);
+  }
+  75% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes img-anim {
+  0% {
+    -webkit-transform: translateX(-3000px);
+            transform: translateX(-3000px);
+  }
+  75% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .section__price {
   margin-bottom: 110px;
 }
@@ -173,6 +222,13 @@ body {
   border: 2px solid #5C8692;
   padding: 18px 32px;
   display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.price__btn:hover {
+  background-color: #EBF3F5;
+  border: 5px solid #5C8692;
 }
 
 .care {
@@ -300,6 +356,13 @@ body {
   padding: 18px 70px;
   display: inline-block;
   margin-top: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.menu__btn:hover {
+  background-color: #EBF3F5;
+  border: 5px solid #5C8692;
 }
 
 .reviews {
@@ -515,6 +578,11 @@ body {
   background-image: url(../img/name_form.png);
   background-position: left top;
   background-repeat: no-repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.mail__input-name:hover, .mail__input-mail:hover, .mail__input-phone:hover, .mail__input-book:hover, .mail__input-big:hover {
+  border: 5px solid #5C8692;
 }
 
 .mail__input-mail {
@@ -598,6 +666,12 @@ body {
   margin-top: 15px;
   margin-bottom: 100px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.blog__btn:hover {
+  background-color: #EBF3F5;
+  border: 5px solid #5C8692;
 }
 
 .footer {
@@ -614,6 +688,9 @@ body {
           justify-content: space-between;
   padding-top: 70px;
   padding-bottom: 65px;
+}
+.footer__logo img:hover {
+  cursor: pointer;
 }
 
 .footer__nav {
@@ -639,6 +716,7 @@ body {
   line-height: 29px;
   letter-spacing: 0.17px;
   width: 100%;
+  cursor: pointer;
 }
 
 .bottom {
