@@ -125,6 +125,14 @@ body{
 	letter-spacing: 0.66px;
 	color: #141414;
 	margin-bottom: 10px;
+
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s;
+}
+.content__title._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
 }
 
 .text{
@@ -158,6 +166,15 @@ body{
 
 .section__price{
 	margin-bottom: 110px;
+	transform: translateX(120%);
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.section__price.anim.animation-class{
+	transform: translateX(0px);
+	opacity: 1;
+	transition: all 0.8s;
 }
 
 .price__inner{
@@ -206,6 +223,16 @@ body{
 .care{
 	margin-bottom: 100px;
 	background-color: #EBF3F5;
+
+	transform: translateX(-120%);
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.care.anim.animation-class{
+	transform: translateX(0);
+	opacity: 1;
+	transition: all 0.8s;
 }
 
 .care__inner{
@@ -251,6 +278,16 @@ body{
 	margin-bottom: 120px;
 	line-height: 12px;
 	position: relative;
+
+	transform: translateX(120%);
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.menu.anim.animation-class{
+	transform: translateX(0);
+	opacity: 1;
+	transition: all 0.8s;
 }
 
 .menu__text{
@@ -335,8 +372,17 @@ body{
 
 .reviews{
 	background-color: #EBF3F5;
+	transform: translateX(-120%);
+	opacity: 0;
+	transition: all 0.8s;
 }
 
+.reviews.anim.animation-class {
+	background-color: #EBF3F5;
+	transform: translateX(0px);
+	opacity: 1;
+	transition: all 0.8s;
+}
 .reviews__top{
 	max-width: 600px;	
 	text-align: center;	
@@ -418,7 +464,16 @@ body{
 	flex-wrap: wrap;
 	margin-bottom: 60px;
 }
-
+.benefits{
+	transform: translateX(120px);
+	opacity: 0;
+	transition: all 0.8s;
+}
+.benefits.anim.animation-class {
+	transform: translateX(0px);
+	opacity: 1;
+	transition: all 0.8s;
+}
 .benefits__item{
 	margin-right: 40px;
 	max-width: 30%;
@@ -437,6 +492,15 @@ body{
 
 .discount{
 	background-color: #EBF3F5;
+	transform: translateX(-120px);
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.discount.anim.animation-class{
+	transform: translateX(0px);
+	opacity: 1;
+	transition: all 0.8s;
 }
 
 .discount__inner{
@@ -573,6 +637,17 @@ body{
 
 //////////////////////////////////////////////////////
 
+.blog{
+	transform: translateX(120px);
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.blog.anim.animation-class{
+	transform: translateX(0px);
+	opacity: 1;
+	transition: all 0.8s;
+}
 
 .blog__inner{
 	display: flex;
