@@ -23,6 +23,7 @@ body {
   font-size: 18px;
   line-height: 31px;
   color: #555555;
+  overflow-x: hidden;
 }
 
 .header__top {
@@ -195,11 +196,12 @@ body {
 }
 .section__price {
   margin-bottom: 110px;
-  -webkit-transform: translateX(120%);
-          transform: translateX(120%);
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  overflow-x: hidden;
 }
 
 .section__price.anim.animation-class {
@@ -264,6 +266,7 @@ body {
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  overflow-x: hidden;
 }
 
 .care.anim.animation-class {
@@ -320,11 +323,12 @@ body {
   margin-bottom: 120px;
   line-height: 12px;
   position: relative;
-  -webkit-transform: translateX(120%);
-          transform: translateX(120%);
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  overflow-x: hidden;
 }
 
 .menu.anim.animation-class {
@@ -423,6 +427,7 @@ body {
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  overflow-x: hidden;
 }
 
 .reviews.anim.animation-class {
@@ -530,11 +535,12 @@ body {
 }
 
 .benefits {
-  -webkit-transform: translateX(120px);
-          transform: translateX(120px);
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  overflow-x: hidden;
 }
 
 .benefits.anim.animation-class {
@@ -560,11 +566,12 @@ body {
 
 .discount {
   background-color: #EBF3F5;
-  -webkit-transform: translateX(-120px);
-          transform: translateX(-120px);
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  overflow-x: hidden;
 }
 
 .discount.anim.animation-class {
@@ -712,11 +719,12 @@ body {
 }
 
 .blog {
-  -webkit-transform: translateX(120px);
-          transform: translateX(120px);
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
   opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  overflow-x: hidden;
 }
 
 .blog.anim.animation-class {
@@ -1077,6 +1085,7 @@ body {
     display: block;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    z-index: 1;
   }
   .menu__list li {
     margin-bottom: 40px;

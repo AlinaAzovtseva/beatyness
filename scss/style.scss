@@ -23,7 +23,7 @@ body{
 	font-size: 18px;
 	line-height: 31px;
 	color: #555555;
-	
+	overflow-x: hidden;
 }
 
 .header__top{
@@ -166,9 +166,10 @@ body{
 
 .section__price{
 	margin-bottom: 110px;
-	transform: translateX(1200%);
+	transform: translateX(-120%);
 	opacity: 0;
 	transition: all 0.8s;
+	overflow-x: hidden;
 }
 
 .section__price.anim.animation-class{
@@ -224,9 +225,10 @@ body{
 	margin-bottom: 100px;
 	background-color: #EBF3F5;
 
-	transform: translateX(-1200%);
+	transform: translateX(-120%);
 	opacity: 0;
 	transition: all 0.8s;
+	overflow-x: hidden;
 }
 
 .care.anim.animation-class{
@@ -279,9 +281,10 @@ body{
 	line-height: 12px;
 	position: relative;
 
-	transform: translateX(1200%);
+	transform: translateX(-120%);
 	opacity: 0;
 	transition: all 0.8s;
+	overflow-x: hidden;
 }
 
 .menu.anim.animation-class{
@@ -372,9 +375,10 @@ body{
 
 .reviews{
 	background-color: #EBF3F5;
-	transform: translateX(-1200%);
+	transform: translateX(-120%);
 	opacity: 0;
 	transition: all 0.8s;
+	overflow-x: hidden;
 }
 
 .reviews.anim.animation-class {
@@ -465,9 +469,10 @@ body{
 	margin-bottom: 60px;
 }
 .benefits{
-	transform: translateX(1200%);
+	transform: translateX(-120%);
 	opacity: 0;
 	transition: all 0.8s;
+	overflow-x: hidden;
 }
 .benefits.anim.animation-class {
 	transform: translateX(0px);
@@ -492,9 +497,10 @@ body{
 
 .discount{
 	background-color: #EBF3F5;
-	transform: translateX(-1200%);
+	transform: translateX(-120%);
 	opacity: 0;
 	transition: all 0.8s;
+	overflow-x: hidden;
 }
 
 .discount.anim.animation-class{
@@ -638,9 +644,10 @@ body{
 //////////////////////////////////////////////////////
 
 .blog{
-	transform: translateX(1200%);
+	transform: translateX(-120%);
 	opacity: 0;
 	transition: all 0.8s;
+	overflow-x: hidden;
 }
 
 .blog.anim.animation-class{
@@ -1000,6 +1007,7 @@ body{
 	padding: 114px 56px;
     display: block;
     transition: all 0.3s;
+    z-index: 1;
     	& li{
     		margin-bottom: 40px;
     		font-size: 40px;
