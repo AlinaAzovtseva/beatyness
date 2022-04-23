@@ -166,16 +166,6 @@ body{
 
 .section__price{
 	margin-bottom: 110px;
-	transform: translateX(-120%);
-	opacity: 0;
-	transition: all 0.8s;
-	overflow-x: hidden;
-}
-
-.section__price.anim.animation-class{
-	transform: translateX(0px);
-	opacity: 1;
-	transition: all 0.8s;
 }
 
 .price__inner{
@@ -185,6 +175,15 @@ body{
 
 .price__item{
 	max-width: 380px;
+	transform: translateX(-120%);
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.price__item.anim.animation-class{
+	transform: translateX(0px);
+	opacity: 1;
+	transition: all 0.8s;
 }
 
 .price__img{
@@ -224,17 +223,6 @@ body{
 .care{
 	margin-bottom: 100px;
 	background-color: #EBF3F5;
-
-	transform: translateX(-120%);
-	opacity: 0;
-	transition: all 0.8s;
-	overflow-x: hidden;
-}
-
-.care.anim.animation-class{
-	transform: translateX(0);
-	opacity: 1;
-	transition: all 0.8s;
 }
 
 .care__inner{
@@ -271,8 +259,29 @@ body{
 	margin-bottom: 40px;
 }
 
+.care-img__inner{
+	transform: scale(0.5);
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.care-img__inner.anim.animation-class{
+	transform: scale(1);
+	opacity: 1;
+}
+
 .care__img{
 	margin-top: 105px;
+
+	transform: translateX(-120%);
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.care__img.anim.animation-class{
+	transform: translateX(0);
+	opacity: 1;
+	transition: all 0.8s;
 }
 //////////////////////////////////////
 
@@ -280,17 +289,6 @@ body{
 	margin-bottom: 120px;
 	line-height: 12px;
 	position: relative;
-
-	transform: translateX(-120%);
-	opacity: 0;
-	transition: all 0.8s;
-	overflow-x: hidden;
-}
-
-.menu.anim.animation-class{
-	transform: translateX(0);
-	opacity: 1;
-	transition: all 0.8s;
 }
 
 .menu__text{
@@ -356,6 +354,18 @@ body{
 	border-bottom: 1px solid #134134;
 }
 
+.menu__item-img{
+	transform: translateX(-120%);
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.menu__item-img.anim.animation-class{
+	transform: translateX(0);
+	opacity: 1;
+ 	transition: all 0.8s;
+}
+
 .menu__btn {
     border: 2px solid #5C8692;
     padding: 18px 70px;
@@ -363,30 +373,26 @@ body{
     margin-top: 25px;
     transition: 0.5s;
 	cursor: pointer;
+	transform: scale(0.5);
+	opacity: 0;
 	&:hover{
 		background-color: #EBF3F5;
 		border: 5px solid #5C8692;
 	};
 }
-
+.menu__btn.anim.animation-class{
+	transform: scale(1);;
+	opacity: 1;
+ 	transition: all 0.8s;
+}
 
 //////////////////////////////////////////////////
 
 
 .reviews{
 	background-color: #EBF3F5;
-	transform: translateX(-120%);
-	opacity: 0;
-	transition: all 0.8s;
-	overflow-x: hidden;
 }
 
-.reviews.anim.animation-class {
-	background-color: #EBF3F5;
-	transform: translateX(0px);
-	opacity: 1;
-	transition: all 0.8s;
-}
 .reviews__top{
 	max-width: 600px;	
 	text-align: center;	
@@ -420,6 +426,15 @@ body{
 	padding-right: 10px;
 	padding-left: 10px;
 	margin-bottom: 120px;
+
+	transform: translateY(120%);
+	opacity: 0;
+	transition: all 0.8s;
+}
+.reviews__item.anim.animation-class {
+	transform: translateX(0px);
+	opacity: 1;
+	transition: all 0.8s;
 }
 
 .reviews__text{
@@ -468,21 +483,19 @@ body{
 	flex-wrap: wrap;
 	margin-bottom: 60px;
 }
-.benefits{
-	transform: translateX(-120%);
-	opacity: 0;
-	transition: all 0.8s;
-	overflow-x: hidden;
-}
-.benefits.anim.animation-class {
-	transform: translateX(0px);
-	opacity: 1;
-	transition: all 0.8s;
-}
+
 .benefits__item{
 	margin-right: 40px;
 	max-width: 30%;
 	margin-bottom: 50px;
+
+	 opacity: 0;
+}
+
+.benefits__item.anim.animation-class {
+	transform: rotate(360deg);
+	 opacity: 1;
+	transition: all 1s;
 }
 
 .benefits__title{
@@ -643,19 +656,6 @@ body{
 
 //////////////////////////////////////////////////////
 
-.blog{
-	transform: translateX(-120%);
-	opacity: 0;
-	transition: all 0.8s;
-	overflow-x: hidden;
-}
-
-.blog.anim.animation-class{
-	transform: translateX(0px);
-	opacity: 1;
-	transition: all 0.8s;
-}
-
 .blog__inner{
 	display: flex;
 }
@@ -664,6 +664,16 @@ body{
 	background-color: #EBF3F5;
 	margin-left: 10px;
 	margin-right: 10px;
+
+	transform: translateX(-120%);
+	opacity: 0;
+	transition: all 0.8s;
+}
+
+.blog__item.anim.animation-class{
+	transform: translateX(0px);
+	opacity: 1;
+	transition: all 0.8s;
 }
 
 .blog__data{
@@ -701,13 +711,18 @@ body{
     margin-top: 15px;
     margin-bottom: 100px;
     cursor: pointer;
-    transition: 0.5s;
+    opacity: 0;
+    transform: scale(0.5);
 	&:hover{
 		background-color: #EBF3F5;
 		border: 5px solid #5C8692;
 	};
 }
-
+.blog__btn.anim.animation-class{
+	transform: scale(1);
+	opacity: 1;
+	transition: all 0.8s;
+}
 //////////////////////////////////////////////////
 
 

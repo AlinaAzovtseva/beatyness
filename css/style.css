@@ -196,20 +196,6 @@ body {
 }
 .section__price {
   margin-bottom: 110px;
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
-  opacity: 0;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  overflow-x: hidden;
-}
-
-.section__price.anim.animation-class {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  opacity: 1;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 
 .price__inner {
@@ -223,6 +209,19 @@ body {
 
 .price__item {
   max-width: 380px;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.price__item.anim.animation-class {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .price__img {
@@ -261,20 +260,6 @@ body {
 .care {
   margin-bottom: 100px;
   background-color: #EBF3F5;
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
-  opacity: 0;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  overflow-x: hidden;
-}
-
-.care.anim.animation-class {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 
 .care__inner {
@@ -315,28 +300,41 @@ body {
   margin-bottom: 40px;
 }
 
+.care-img__inner {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.care-img__inner.anim.animation-class {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
 .care__img {
   margin-top: 105px;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.care__img.anim.animation-class {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .menu {
   margin-bottom: 120px;
   line-height: 12px;
   position: relative;
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
-  opacity: 0;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  overflow-x: hidden;
-}
-
-.menu.anim.animation-class {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 
 .menu__text {
@@ -406,6 +404,22 @@ body {
   border-bottom: 1px solid #134134;
 }
 
+.menu__item-img {
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.menu__item-img.anim.animation-class {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
 .menu__btn {
   border: 2px solid #5C8692;
   padding: 18px 70px;
@@ -414,29 +428,25 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  opacity: 0;
 }
 .menu__btn:hover {
   background-color: #EBF3F5;
   border: 5px solid #5C8692;
 }
 
-.reviews {
-  background-color: #EBF3F5;
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
-  opacity: 0;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  overflow-x: hidden;
-}
-
-.reviews.anim.animation-class {
-  background-color: #EBF3F5;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+.menu__btn.anim.animation-class {
+  -webkit-transform: scale(1);
+          transform: scale(1);
   opacity: 1;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+}
+
+.reviews {
+  background-color: #EBF3F5;
 }
 
 .reviews__top {
@@ -476,6 +486,19 @@ body {
   padding-right: 10px;
   padding-left: 10px;
   margin-bottom: 120px;
+  -webkit-transform: translateY(120%);
+          transform: translateY(120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.reviews__item.anim.animation-class {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .reviews__text {
@@ -534,27 +557,19 @@ body {
   margin-bottom: 60px;
 }
 
-.benefits {
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
-  opacity: 0;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  overflow-x: hidden;
-}
-
-.benefits.anim.animation-class {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  opacity: 1;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
 .benefits__item {
   margin-right: 40px;
   max-width: 30%;
   margin-bottom: 50px;
+  opacity: 0;
+}
+
+.benefits__item.anim.animation-class {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .benefits__title {
@@ -718,23 +733,6 @@ body {
   cursor: pointer;
 }
 
-.blog {
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
-  opacity: 0;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  overflow-x: hidden;
-}
-
-.blog.anim.animation-class {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  opacity: 1;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
 .blog__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -745,6 +743,19 @@ body {
   background-color: #EBF3F5;
   margin-left: 10px;
   margin-right: 10px;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.blog__item.anim.animation-class {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .blog__data {
@@ -784,12 +795,21 @@ body {
   margin-top: 15px;
   margin-bottom: 100px;
   cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 .blog__btn:hover {
   background-color: #EBF3F5;
   border: 5px solid #5C8692;
+}
+
+.blog__btn.anim.animation-class {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .footer {
